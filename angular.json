@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ckeditortest"
+    }
+  },
+  "defaultProject": "ckeditortest",
+  "cli": {
+    "analytics": "e42f2305-847a-442a-8d7c-bd93b472d862"
+  }
 }

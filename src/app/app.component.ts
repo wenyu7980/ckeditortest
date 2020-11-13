@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import * as Editor from './ckeditor';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,47 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ckeditortest';
+  content: string;
+  editor = Editor;
+  config = {
+
+    toolbar: {
+      items: [
+        'heading',
+        '|',
+        'bold',
+        'italic',
+        'link',
+        'bulletedList',
+        'numberedList',
+        '|',
+        'indent',
+        'outdent',
+        '|',
+        'imageUpload',
+        'blockQuote',
+        'insertTable',
+        'mediaEmbed',
+        'undo',
+        'redo'
+      ]
+    },
+    language: 'zh-cn',
+    image: {
+      toolbar: [
+        'imageTextAlternative',
+        'imageStyle:full',
+        'imageStyle:side'
+      ]
+    },
+    table: {
+      contentToolbar: [
+        'tableColumn',
+        'tableRow',
+        'mergeTableCells'
+      ]
+    },
+    licenseKey: '',
+
+  };
 }
